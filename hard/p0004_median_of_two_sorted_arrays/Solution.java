@@ -1,3 +1,5 @@
+package hard.p0004_median_of_two_sorted_arrays;
+
 import java.util.Arrays;
 
 class Solution {
@@ -15,5 +17,11 @@ class Solution {
             median = num3[mid];
         }
         return median;
+    }
+
+    public static void main(String[] args) {
+        Solution s = new Solution();
+        System.out.println(s.findMedianSortedArrays(new int[]{1, 3}, new int[]{2}));    // 2.0
+        System.out.println(s.findMedianSortedArrays(new int[]{1, 2}, new int[]{3, 4})); // 2.5
     }
 }
